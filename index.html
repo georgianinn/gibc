@@ -11,7 +11,12 @@
     <!-- CSS Links -->
     <link href="./resources/css/index/style.css" rel=stylesheet type="text/css" />
     <link href="./resources/css/global.css" rel=stylesheet type="text/css" />
-
+    <link rel="stylesheet" media="screen and (max-width: 376px)" href="./resources/css/index/375.css" type="text/css" />
+    <link rel="stylesheet" media="screen and (min-width: 377px) and (max-width: 416px)" href="./resources/css/index/415.css" type="text/css" />
+    <link rel="stylesheet" media="screen and (min-width: 416px) and (max-width: 480px)" href="./resources/css/index/480.css" type="text/css" />
+    <link rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 768px)" href="./resources/css/index/768.css" type="text/css" />
+    <link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 1024px)" href="./resources/css/index/1024.css" type="text/css" />
+    <link rel="stylesheet" media="screen and (min-width: 1025px) and (max-width: 1600px)" href="./resources/css/index/1600.css" type="text/css" />
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
@@ -53,7 +58,7 @@
     <!-- Landing Page Title + Jumbotron -->
 
     <div class="landing container-fluid d-flex">
-      <div class="d-flex home-title col-12 justify-content-center align-items-center flex-column">
+      <div class="d-flex home-title justify-content-center flex-column">
         <div class="text">
           <h1>Georgian Inn Beach Club</h1>
           <h2>Ormond Beach, FL</h2>
@@ -65,26 +70,27 @@
 
     <div class="container-fluid three-fold">
       <div class="row">
-        <div class="col one three-fold-plate d-flex">
+        <div class="col-lg-3 col-sm-12 one three-fold-plate d-flex">
           <h3>104 Rooms</h3>
           <h3>X Feet of Oceanfront</h3>
         </div>
-        <div class="col-6 two three-fold-plate d-flex">
+        <div class="col-lg-6 col-sm-12 two three-fold-plate d-flex">
           <h3>Best Rates - Book Direct</h3><br>
           <h2 class="btn btn-outline-light btn-lg">BOOK NOW</h3>
         </div>
-        <div class="col one three-fold-plate d-flex">
+        <div class="col-lg-3 col-sm-12 one three-fold-plate d-flex">
           <h3>4.3 Stars on Google</h3>
           <h3>5000 Owners</h3>
         </div>
       </div>
+    </div>
 
 
       <!-- Why GIBC? -->
 
       <div class="container why-us d-flex flex-column justify-content-center align-items-center">
         <h2>Why GIBC?</h2>
-        <div class="cards flex-row d-flex">
+        <div class="cards flex-row d-flex flex-wrap justify-content-center">
           <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="resources/images/sample.JPG" alt="Card image cap">
             <div class="card-body">
@@ -158,14 +164,14 @@
         <div class="container-fluid location d-flex flex-column">
           <h1>Find Us</h1>
           <div class="row d-flex flex-row">
-            <div class="col-6 flex-column d-flex">
+            <div class="col-lg-6 col-sm-12 flex-column d-flex">
               <h2>Directions</h2>
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.5988163988686!2d-81.03191088513583!3d29.272504661578658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e6dae21ece8abd%3A0xfd58edd8e83a741b!2sGeorgian%20Inn%20Beach%20Club!5e1!3m2!1sen!2sus!4v1598925980345!5m2!1sen!2sus" width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
-            <div class="col-6 flex-column d-flex">
+            <div class="col-lg-6 col-sm-12 flex-column d-flex">
 
                 <div class="col">
-                  <h2>Contact Info</h2>
+                  <h2 id="secondtitle">Contact Info</h2>
                   <div class="info">
                     <p class="title1">Address</p>
                     <p role="address">759 S Atlantic Ave<br>Ormond Beach, FL 32176</p>
@@ -181,7 +187,7 @@
                     <p role="email">frontdesk@gi-bc.com</p>
 
                   </div>
-                  <div class="col">
+                  <div class="col findbuttons d-flex">
                     <a href="https://www.google.com/maps/dir//georgian+inn+beach+club/@29.2725703,-81.0647418,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x88e6dae21ece8abd:0xfd58edd8e83a741b!2m2!1d-81.0297222!2d29.2725"><button class="btn btn-outline-primary">Directions</button></a>
                     <a href="tel:3866776043"><button class="btn btn-outline-primary">Call Us</button></a>
                     <a href="mailto:frontdesk@gi-bc.com?subject=Sent from GIBC Website"><button class="btn btn-outline-primary">Email Us</button></a>
@@ -194,15 +200,15 @@
 
         <!-- Interactive Footer -->
 
-        <footer class="d-flex flex-row container-fluid">
-          <div class="nav flex-column nav-pills col-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <footer class="d-flex flex-row container-fluid left-navi">
+          <div class="nav flex-column nav-pills col-sm-2 col-lg-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Navigation</a>
             <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Legal</a>
 
           </div>
-          <div class="tab-content col-9 d-flex flex-row" id="v-pills-tabContent">
+          <div class="tab-content col-lg-9 col-sm-9 d-flex flex-row" id="v-pills-tabContent">
             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" role="navigation" aria-labelledby="v-pills-home-tab">
-              <ul class="nav justify-content-center d-flex flex-row">
+              <ul class="nav justify-content-center d-flex flex-row right-navi">
                 <li class="nav-item">
                   <a class="nav-link active" href="#">Home</a>
                 </li>
