@@ -1,0 +1,32 @@
+/* Landing area */
+
+.landing {
+  height: 50vh;
+  background-image: url("../../images/...jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-title {
+  color: black;
+  margin: auto;
+  text-align: center;
+}
+
+.text {
+  background-color: rgba(0,0,0,0.4);
+  padding: 2vh;
+  text-align: center;
+}
+
+/* Tabbed section */
+
+.services-section {
+  margin-top: 5vh;
+}
+
+.tabsection h2 {
+  margin-bottom: 5vh;
+  margin-top: 3vh;
+}
