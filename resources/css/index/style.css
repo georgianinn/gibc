@@ -1,8 +1,7 @@
 /* Home Landing Area */
 
 .landing {
-  height: 90vh;
-  width: 100vw;
+  height: 100vh;
   background-image: url("../../images/Mainbackground.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -60,4 +59,42 @@
 
 .card {
   margin: 2vh;
+}
+
+/* Location and Contact */
+
+.location {
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+
+.location h1 {
+  text-align: center;
+}
+
+.location p {
+  font-size: 3vh;
+}
+
+.location h2 {
+  text-align: center;
+}
+
+.title1 {
+  font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+  border-top: 0.5vh solid black;
+  margin-top: 5vh;
+}
+
+footer .nav {
+  margin-top: 5vh;
+}
+
+.copyright {
+  text-align: center;
 }
