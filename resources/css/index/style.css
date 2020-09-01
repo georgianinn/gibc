@@ -50,3 +50,14 @@
 .three-fold .one {
   background-color: #00b3ff;
 }
+
+/* Why GIBC? */
+
+.why-us {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.card {
+  margin: 2vh;
+}
