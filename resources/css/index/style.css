@@ -1,0 +1,52 @@
+/* Home Landing Area */
+
+.landing {
+  height: 90vh;
+  width: 100vw;
+  background-image: url("../../images/Mainbackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-title {
+  color: white;
+}
+
+.text {
+  background-color: rgba(0,0,0,0.4);
+  padding: 2vh;
+  text-align: center;
+}
+
+.text h1 {
+  font-size: 7vh;
+}
+
+.book-button-nav {
+  color: #0088ff !important;
+  font-weight: bold;
+}
+
+/* Three panels */
+
+.three-fold .three-fold-plate {
+  height: 25vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.three-fold .col:hover {
+  opacity: 0.9;
+}
+
+.three-fold .two {
+  background-color: #0088ff;
+}
+
+.three-fold .one {
+  background-color: #00b3ff;
+}
