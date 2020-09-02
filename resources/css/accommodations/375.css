@@ -39,3 +39,24 @@
 .room-right h6 {
   text-align: left;
 }
+
+/* Attractions */
+
+.attraction {
+  min-width: 80vw;
+  margin: auto;
+  margin-top: 2vh;
+}
+
+.attraction-type {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vh;
+}
+
+.attraction-type .container {
+  padding: 0;
+}
+
+.
