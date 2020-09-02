@@ -1,15 +1,16 @@
 /* Landing area */
 
 .landing {
-  height: 50vh;
-  background-image: url("../../images/...jpg");
+  height: 75vh;
+  background-image: url("../../images/beachchairs.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  color: white;
+  margin-bottom: 5vh;
 }
 
 .home-title {
-  color: black;
   margin: auto;
   text-align: center;
 }
@@ -24,9 +25,43 @@
 
 .services-section {
   margin-top: 5vh;
+  text-align: center;
+}
+
+.carousel-section {
+  text-align: center;
+}
+
+.carousel-section h2 {
+  text-align: center;
+}
+
+.services-section p {
+  font-size: 3vh;
 }
 
 .tabsection h2 {
   margin-bottom: 5vh;
   margin-top: 3vh;
+}
+
+.services {
+  margin-top: 3vh;
+}
+
+
+/* Rooms */
+
+.room-listing {
+  padding: 3vh;
+  margin: 2vh;
+}
+
+.carousel {
+  border: 0.3vh black solid;
+}
+
+.service button img {
+  width: 2em;
+  height: 2em;
 }
