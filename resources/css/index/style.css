@@ -60,6 +60,9 @@
   margin: 2vh;
 }
 
+.carousel {
+  margin-top: 4vh;
+}
 /* Location and Contact */
 
 .location {
@@ -81,6 +84,10 @@
 
 .title1 {
   font-weight: bold;
+}
+
+.findbuttons a {
+  margin: 2vh;
 }
 
 /* Footer */
