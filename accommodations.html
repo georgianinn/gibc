@@ -20,6 +20,7 @@
     <link rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 768px)" href="./resources/css/accommodations/768.css" type="text/css" />
     <link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 1024px)" href="./resources/css/accommodations/1024.css" type="text/css" />
     <link rel="stylesheet" media="screen and (min-width: 1025px) and (max-width: 1600px)" href="./resources/css/accommodations/1600.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/stevenmonson/googleReviews/master/google-places.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
@@ -1069,6 +1070,27 @@
         <div class="tab-pane fade" id="nav-reviews" role="tabpanel" aria-labelledby="nav-reviews-tab">
           <div class="tabsection d-flex flex-column">
             <h2>Reviews<h2>
+              <div class="d-flex">
+                <div id="google-reviews"></div>
+
+                  <link rel="stylesheet" href="https://cdn.rawgit.com/stevenmonson/googleReviews/master/google-places.css">
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+                  <script src="https://cdn.jsdelivr.net/gh/stevenmonson/googleReviews@6e8f0d794393ec657dab69eb1421f3a60add23ef/google-places.js"></script>
+                  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDeivU57j-macv2fXXgbhKGM6cqMLmnAFI&signed_in=true&libraries=places"></script>
+                </div>
+              </div>
+            </div>
+            <script>
+            jQuery(document).ready(function( $ ) {
+               $("#google-reviews").googlePlaces({
+                    placeId: 'ChIJvYrOHuLa5ogRG3Q66NjtWP0' //Find placeID @: https://developers.google.com/places/place-id
+                  , render: ['reviews']
+                  , min_rating: 4
+                  , max_rows:4
+               });
+            });
+            </script>
+
           </div>
         </div>
 
