@@ -18,3 +18,8 @@ footer .nav {
 .copyright {
   text-align: center;
 }
+
+.book-button-nav {
+  color: #0088ff !important;
+  font-weight: bold;
+}
